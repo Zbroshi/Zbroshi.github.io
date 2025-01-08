@@ -1,55 +1,56 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-tw">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/css/uikit.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.16/dist/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="uikit.css"
+    <title>綠崗麵包工坊</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.12/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.12/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.12/dist/js/uikit-icons.min.js"></script>
 </head>
 <body>
-    <!--頁首-->
-    <header class="uk-background-muted uk-padding-small">
-        <div class="uk-container uk-flex uk-flex-middle uk-flex-between">
-            <!-- Logo 和網站名稱 -->
+
+        <!--頁首-->
+        <header class="uk-background-muted uk-padding-small" uk-sticky="offset:0;">
+            <div class="uk-container uk-flex uk-flex-between uk-flex-middle">
+        <!-- Logo and Site Name -->
             <div class="uk-flex uk-flex-middle">
-                <img src="photo/mylogo2.jpg" alt="網站 Logo" class="uk-margin-small-right uk-border-circle" width="90" height="90">
-                <div>
-                    <h1 class="uk-margin-remove uk-text-bold uk-text-primary">綠崗麵包工坊</h1>
-                    <p class="uk-margin-remove uk-text-meta">GreenHill Bakery</p>
-                </div>
+            <img src="photo/mylogo2.jpg" alt="Green Hill Brunch Logo" width="100" height="90" class="uk-margin-small-right uk-border-circle">
+            <div>
+                <h1 class="uk-margin-remove">綠崗早午餐</h1>
+                <p class="uk-margin-remove">Green Hill Brunch</p>
             </div>
-            <!-- RWD 選單 -->
-            <nav class="uk-navbar-container" uk-navbar>
-                <!-- 漢堡選單（行動版） -->
-                <div class="uk-hidden@m">
-                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">
-                        <span uk-navbar-toggle-icon></span>
-                    </button>
-                    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
-                        <div class="uk-offcanvas-bar">
-                            <button class="uk-offcanvas-close" type="button" uk-close></button>
-                            <ul class="uk-nav uk-nav-default">
-                                <li><a href="index.html">首頁</a></li>
-                                <li><a href="#">關於我們</a></li>
-                                <li><a href="#">產品列表</a></li>
-                                <li><a href="#">聯絡我們</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- 電腦版選單 -->
-                <ul class="menu uk-navbar-nav uk-visible@m">
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="#">關於我們</a></li>
-                    <li><a href="#">產品列表</a></li>
-                    <li><a href="#">聯絡我們</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
+
+        <!-- Navigation -->
+        <nav>
+            <ul class="uk-navbar-nav uk-visible@m">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="product.html">產品</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+                <li><a href="backup/index.html">舊網站</a></li>
+            </ul>
+
+            <!-- Hamburger Menu for Mobile -->
+            <a class="uk-hidden@m" uk-navbar-toggle-icon href="#" uk-toggle="target: #offcanvas-nav"></a>
+        </nav>
+    </div>
+</header>
+
+<!-- Offcanvas Menu for Mobile -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="product.html">產品</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+            <li><a href="backup/index.html">舊網站</a></li>
+        </ul>
+    </div>
+</div>
 
     <!--主內容 main-->
 
